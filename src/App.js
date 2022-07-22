@@ -6,6 +6,7 @@ import Login from './Login'
 import Stopwatch from './Stopwatch'
 import Logger from './Logger'
 import GPS from './GPS'
+import WebWorker from './WebWorker'
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
 
         <Title>GPS</Title>
         <GPS />
+
+        <Title>WebWorker</Title>
+        <WebWorker />
       </Stack>
     </Container>
   );

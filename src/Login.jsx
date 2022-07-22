@@ -1,6 +1,5 @@
 import { Text } from "@mantine/core"
 import { useQuery } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const fetchLogin = () => fetch("/login.json").then((resp) => resp.json());
 const fetchUser = (id) => fetch(`/${id}.json`).then((resp) => resp.json());
@@ -21,7 +20,6 @@ const Login = () => {
     <div>
       <Text>{JSON.stringify(user)}</Text>
       <div>{isFetching ? "Updating..." : ""}</div>
-      {/* <ReactQueryDevtools initialIsOpen /> */}
     </div>
     
   );

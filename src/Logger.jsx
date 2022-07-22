@@ -1,6 +1,5 @@
 import { Stack, Text } from "@mantine/core"
 import { useQuery } from "@tanstack/react-query"
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const subscribeToLog = () => {
   let log = [];
@@ -25,7 +24,6 @@ const Logger = () => {
   return (
     <Stack>
       {log?.map((entry, index) => <Text key={index}>{entry}</Text>)}
-      {/* <ReactQueryDevtools initialIsOpen /> */}
     </Stack>
     
   )
