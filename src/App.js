@@ -5,6 +5,7 @@ import client from "./client";
 import Login from './Login'
 import Stopwatch from './Stopwatch'
 import Logger from './Logger'
+import GPS from './GPS'
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
 
         <Title>Logger</Title>
         <Logger />
+
+        <Title>GPS</Title>
+        <GPS />
       </Stack>
     </Container>
   );
